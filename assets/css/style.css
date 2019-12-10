@@ -1,0 +1,104 @@
+/*
+--------------------------------------------
+--------------  HEADER  --------------------
+--------------------------------------------
+*/
+
+header {
+    background: #FBFAFA;
+    height: 100px;
+}
+
+body {
+    margin: 0%;
+    background-image: url(../images/gray_jean.png);
+    font-family: Cotoris, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header h1 {
+    background: teal;   
+    color: white;
+    margin-top: 0%;
+    margin-left: 15%;
+    padding-left: 40px;
+    width: 20%;
+    height: 100%;
+    line-height: 3;
+}
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 4%;
+    right: 13%;
+  }
+
+.nav-menu-item {
+    float: left;
+    list-style-type: none
+}
+
+.nav-menu-item a {
+    padding: 10px 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: gray;
+    line-height: .75;
+}
+
+.nav-menu-item a:hover {
+    color: #000
+}
+
+.nav-menu-item:after {
+content: '';
+display: inline-block;
+position: absolute;
+height: 20px;
+width: 1px;
+background: lightgray
+}
+
+.nav-menu-item:last-child::after {
+display: none
+}
+
+  /*
+--------------------------------------------
+--------------  INDEX  ---------------------
+--------------------------------------------
+*/
+
+.index-wrapper {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 4%;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: thin;
+    background: #FBFAFA;
+    padding: 0 2%;
+    padding-bottom: 2%;
+}
+
+.index-wrapper h1 {
+    color: teal;
+    border-bottom: 4px solid gray;
+    line-height: 2.5;
+}
+
+.index-wrapper div {
+    width: auto;
+}
+
+.index-wrapper p {
+    line-height: 1.5;
+    font-size: 1.25em;
+}
+
+.index-wrapper img {
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
