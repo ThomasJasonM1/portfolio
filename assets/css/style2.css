@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header {
+    flex-grow: 1;
+    display: flex;
+}
