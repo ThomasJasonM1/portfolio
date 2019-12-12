@@ -160,3 +160,24 @@ footer {
     height: 2em;
     width: 6em;
 }
+
+#portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+#portfolio-section h1 {
+    width: 100%;
+}
+
+.wrapper img {
+    width: 250px;
+    height: 200px;
+}
+
+#portfolio-footer  {
+    @media (max-width: 1140px) {
+        position: sticky;
+    }
+}
