@@ -128,3 +128,35 @@ footer {
     margin-right: 2%;
     margin-bottom: 2%;
 }
+
+  /*
+--------------------------------------------
+--------------  CONTACT  -------------------
+--------------------------------------------
+*/
+
+
+.form-field {
+    width: 97%;
+    margin-bottom: 1.5em;
+    margin-top: .50em;
+    height: 2.5em;
+    padding-left: 2%;
+    border-color: none;
+}
+
+#message {
+    padding-top: 1em;
+    height: 200px;
+    border-style: inset;
+    border-color: none;
+}
+
+#submit {
+    border-style: hidden;
+    background: #4aaaa5;
+    color: #fff;
+    font-size: 1em;
+    height: 2em;
+    width: 6em;
+}
