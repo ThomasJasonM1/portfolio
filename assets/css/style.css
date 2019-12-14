@@ -16,6 +16,7 @@ body {
     /* font-family: Cotoris, Cochin, Georgia, Times, 'Times New Roman', serif; */
     color: #777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    min-width: 1140px;
 }
 
 html, 
@@ -106,11 +107,12 @@ footer {
     background: #fff;
     padding: 0 2%;
     padding-bottom: 2%;
+    min-height: 65%;
 }
 
 .wrapper h1 {
     color: #4aaaa5;
-    border-bottom: 4px solid gray;
+    border-bottom: 4px solid #ccc;
     line-height: 2.5;
 }
 
@@ -119,8 +121,9 @@ footer {
 }
 
 .about-me-content p {
-    line-height: 1.5;
-    font-size: 1.25em;
+    line-height: 1.9;
+    font-size: 1.1em;
+    font-family: 'Kalam', cursive;
 }
 
 .wrapper img {
@@ -161,23 +164,79 @@ footer {
     width: 6em;
 }
 
-#portfolio-section {
+  /*
+--------------------------------------------
+--------------  PORTFOLIO  -----------------
+--------------------------------------------
+*/
+
+/* #portfolio-section {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
+    flex-direction: column;
+    flex-wrap: inherit;
 }
 
 #portfolio-section h1 {
     width: 100%;
 }
 
+
 .wrapper img {
-    width: 250px;
-    height: 200px;
+    width: 350px;
+    height: 300px;
+} 
+
+
+
+#portfolio-section h2 {
+    position: relative;
+    z-index: 1;
+    background: teal;
+    color: white;
+    text-align: center;
+    top: 130px;
+    width: 350px;
 }
 
-#portfolio-footer  {
-    @media (max-width: 1140px) {
-        position: sticky;
-    }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+
+
+  .wrapper img {
+    width: 350px;
+    height: 300px;
+} 
+
+#portfolio-section {
+    margin-bottom: 10%;
+}
+
+.portfolio-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#portfolio-footer {
+    position: relative;
+}
+
+.portfolio-section div {
+    padding: 2%;
+    margin-top: -8%;
+}
+
+#portfolio-section h2 {
+    position: relative;
+    z-index: 1;
+    background: #4aaaa5;
+    color: white;
+    text-align: center;
+    top: 55%;
+    width: 350px;
+    height: 2em;
+    line-height: 2;
 }
