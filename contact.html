@@ -5,38 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Jason Thomas</h1>
-        <ul class="nav-menu">
-            <li class="nav-menu-item"><a href="index.html">About</a></li>
-            <li class="nav-menu-item"><a href="portfolio.html">Portfolio</a></li>
-            <li class="nav-menu-item"><a href="contact.html">Contact</a></li>
-        </ul>
+    <header class="">
+        <!-- Navbar -->
+        <nav class="navbar navbar-custom pt-0 pb-0 mx-auto navbar-expand-md pl-0 h-100">
+            <!-- Brand -->
+            <h1 class="navbar-brand text-center w-75 ml-0 my-0 h-100">Jason Thomas</h1>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-md-auto float-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <div class="wrapper">
-        <h1>Contact</h1>
+    <div class="wrapper container mt-5 pb-4">
+        <div class="row mx-0">
+                <h1 class="col-sm-12">Contact</h1>
+        </div>
+        
 
-        <form action="">
+        <form class="col-sm-12" action="">
                 <label for="name">Name</label><br>
-                <input class="form-field" type="text" name="name" placeholder="John Smith">
+                <input class="form-field w-100 mb-3 p-2" type="text" name="name" placeholder="John Smith">
                 <br>
                 <label for="email">Email</label><br>
-                <input class="form-field" type="text" name="email" placeholder="example@gmail.com">
+                <input class="form-field w-100 mb-3 p-2" type="text" name="email" placeholder="example@gmail.com">
                 <br>
-                <label for="message">Message</label><br>
-                <textarea class="form-field" id="message" name="message" placeholder="Write something.."></textarea>
+                <label for="message pt-1">Message</label><br>
+                <textarea class="form-field w-100 mb-3 p-2" id="message" name="message" placeholder="Write something.."></textarea>
                 <br><br>
                 <input id="submit" type="button" value="Submit">
         </form>
 
     </div>
 
-    <footer>
-        <p>Copyright &copy;</p>
+    <footer class="navbar fixed-bottom">
+        <p class="m-auto py-3">Copyright &copy;</p>
     </footer>
 </body>
 </html>

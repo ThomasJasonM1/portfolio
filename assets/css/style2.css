@@ -1,10 +1,96 @@
+
+/* 
+--------------------------------------------
+--------------  HEADER  --------------------
+-------------------------------------------- 
+*/
+
 body {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    background-image: url(../images/gray_jean.png);
+    min-width: 305px;
 }
 
 header {
-    flex-grow: 1;
-    display: flex;
+    line-height: 3.5;
+    font-size: 1.5em;
+}
+
+.navbar-brand {
+    background: #4aaaa5;   
+    color: #fff;
+    font-size: 1.25em !important; 
+}
+
+.navbar a {
+    color: #4aaaa5;
+}
+
+.navbar a:hover {
+    background: #4aaaa5;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        font-size: 1em;
+    }
+
+    .nav-item {
+        height: 2em;
+        padding-top: 0;
+    }
+
+    .navbar a:hover {
+        background: #fff;
+        color: #4aaaa5;
+    }
+}
+
+/*
+--------------------------------------------
+--------------  INDEX  ---------------------
+--------------------------------------------
+*/
+
+.wrapper {
+    background: #fff;
+}
+
+.wrapper h1 {
+    color: #4aaaa5;
+    border-bottom: 4px solid #ccc;
+    line-height: 2.5;
+}
+
+/*
+--------------------------------------------
+--------------  FOOTER  --------------------
+--------------------------------------------
+*/
+
+footer {
+    background: #666;
+    border-top: 4px solid #4aaaa5;
+    color: lightgray;
+}
+
+/*
+--------------------------------------------
+--------------  PORTFOLIO  -----------------
+--------------------------------------------
+*/
+
+#portfolio-section img {
+    width: 300px;
+    height: 250px;
+} 
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 79%;
+    margin-left: 11%;
+    background: #4aaaa5;
+    color: white;
 }
