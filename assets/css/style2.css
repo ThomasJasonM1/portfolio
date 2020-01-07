@@ -86,11 +86,6 @@ footer {
 } 
 
 .caption {
-    position: absolute;
-    top: 45%;
-    left: 0;
-    width: 79%;
-    margin-left: 11%;
     background: #4aaaa5;
     color: white;
 }
