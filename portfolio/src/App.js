@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -8,7 +9,7 @@ import Portfolio from './pages/Portfolio';
 const App = () => {
   return (
     <Router>
-      <div>
+      <div style={{ background: '#d1d1e0' }}>
         <Navbar />
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />

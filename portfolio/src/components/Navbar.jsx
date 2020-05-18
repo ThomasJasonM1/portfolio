@@ -4,11 +4,20 @@ import { Link } from "react-router-dom";
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import { borderRight } from '@material-ui/system';
 
 const useStyles = makeStyles({
     root: {
-        flexGrow: 1,
+        // flexGrow: 1,
+        // position: 'fixed',
+        // top: 0,
+        // width: '100%'
     },
+    tabsStyles: {
+        // bottom: 0,
+        // position: 'fixed',
+        // background: 'red'
+    }
 });
 
 export default function Navbar() {
@@ -31,7 +40,9 @@ export default function Navbar() {
         setValue(newValue);
     };
 
-    console.log(value);
+    const navStyles = {
+        margin: 'auto',
+    }
 
     return (
         <Paper className={classes.root}>
@@ -40,11 +51,13 @@ export default function Navbar() {
                 onChange={handleChange}
                 indicatorColor="primary"
                 textColor="primary"
-                centered
+                className={classes.tabsStyles}
             >
+                
                 <Tab label="Home" to='/home' component={Link} />
                 <Tab label="Contact" to='/contact' component={Link} />
                 <Tab label="Portolio" to='/portfolio' component={Link} />
+                <div style={navStyles}>Jason Thomas</div>
             </Tabs>
         </Paper>
     );
