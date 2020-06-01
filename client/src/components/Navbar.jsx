@@ -4,21 +4,8 @@ import { Link } from "react-router-dom";
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import { borderRight } from '@material-ui/system';
 
-const useStyles = makeStyles({
-    root: {
-        // flexGrow: 1,
-        // position: 'fixed',
-        // top: 0,
-        // width: '100%'
-    },
-    tabsStyles: {
-        // bottom: 0,
-        // position: 'fixed',
-        // background: 'red'
-    }
-});
+
 
 export default function Navbar() {
     useEffect(() => {
@@ -33,16 +20,35 @@ export default function Navbar() {
         }
     });
 
+    const useStyles = makeStyles({
+        root: {
+            // marginTop: 'auto',
+            // flexGrow: 1,
+            // position: 'fixed',
+            // top: 0,
+            // width: '100%'
+        },
+        tabsStyles: {
+            // height: '5em',
+            // bottom: 0,
+            // position: 'fixed',
+            background: '#edf2f7'
+            // paddingTop: '1.25em'
+        },
+        navStyles: {
+            color: 'rgba(0,0,0,0.54)',
+            margin: 'auto',
+            height: '2em',
+            paddingTop: '0.4em'
+        }
+    });
+
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-
-    const navStyles = {
-        margin: 'auto',
-    }
 
     return (
         <Paper className={classes.root}>
@@ -56,8 +62,8 @@ export default function Navbar() {
                 
                 <Tab label="Home" to='/home' component={Link} />
                 <Tab label="Contact" to='/contact' component={Link} />
-                <Tab label="Portolio" to='/portfolio' component={Link} />
-                <div style={navStyles}>Jason Thomas</div>
+                <Tab label="Portfolio" to='/portfolio' component={Link} />
+                <h1 className={classes.navStyles}>Jason Thomas</h1>
             </Tabs>
         </Paper>
     );
